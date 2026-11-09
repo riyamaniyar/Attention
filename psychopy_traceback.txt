@@ -1,0 +1,5 @@
+wx._core.wxAssertionError: C++ assertion “GetEventHandler() == this” failed at /private/var/folders/pd/2_nlvl1s4k121pdk4d5_2c8m0000gn/T/cibw-sdist-maqtq0ng/wxpython-4.3.1/ext/wxWidgets/src/common/wincmn.cpp(472) in ~wxWindowBase(): any pushed event handlers must have been removed
+
+The above exception was the direct cause of the following exception:
+
+SystemError: <class ‘wx._core.WindowDestroyEvent’> returned a result with an exception set
