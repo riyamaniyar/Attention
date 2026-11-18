@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2026.2.3">
+<PsychoPy2experiment encoding="utf-8" version="2026.2.5">
   <Settings>
     <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
@@ -12,7 +12,7 @@
     <Param val="False" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
     <Param val="" valType="str" updates="None" name="Incomplete URL"/>
-    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="mcb" valType="str" updates="None" name="Monitor"/>
     <Param val="[]" valType="list" updates="None" name="Resources"/>
     <Param val="False" valType="bool" updates="None" name="Save csv file"/>
     <Param val="False" valType="bool" updates="None" name="Save excel file"/>
@@ -23,9 +23,9 @@
     <Param val="1" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
-    <Param val="pix" valType="str" updates="None" name="Units"/>
+    <Param val="deg" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
-    <Param val="[1200, 750]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="[1200,750]" valType="list" updates="None" name="Window size (pixels)"/>
     <Param val="fill" valType="str" updates="None" name="backgroundFit"/>
     <Param val="" valType="str" updates="None" name="backgroundImg"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
@@ -105,7 +105,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.30" valType="num" updates="constant" name="letterHeight"/>
         <Param val="text" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -142,53 +142,6 @@
         <Param val="False" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="Fixation">
-      <RoutineSettingsComponent name="Fixation" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
-        <Param val="Fixation" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <PolygonComponent name="polygon" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="False" valType="code" updates="constant" name="draggable"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="white" valType="color" updates="constant" name="fillColor"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="white" valType="color" updates="constant" name="lineColor"/>
-        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
-        <Param val="4" valType="int" updates="constant" name="nVertices"/>
-        <Param val="polygon" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="cross" valType="str" updates="None" name="shape"/>
-        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="code" updates="None" name="validator"/>
-        <Param val="" valType="list" updates="constant" name="vertices"/>
-      </PolygonComponent>
-    </Routine>
     <Routine name="Trial">
       <RoutineSettingsComponent name="Trial" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
@@ -216,7 +169,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="Target" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -229,7 +182,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$targetChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -243,7 +196,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="Flank1L" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -256,7 +209,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$flank1LChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -270,7 +223,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="flank2L" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -283,7 +236,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$flank2LChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -297,7 +250,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="flank3L" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -310,7 +263,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$flank3LChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -324,7 +277,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="flank1R" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -337,7 +290,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$flank1RChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -351,7 +304,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="flank2R" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -364,7 +317,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$flank2RChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -378,7 +331,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
         <Param val="flank3R" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -391,7 +344,7 @@
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="$flank3RChar" valType="str" updates="set every repeat" name="text"/>
-        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -487,20 +440,20 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.40" valType="num" updates="constant" name="letterHeight"/>
         <Param val="text_3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Practice complete. The main task works the same way, but there is no feedback after each trial. Press SPACE to begin." valType="str" updates="constant" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="Practice complete. The main task works the same way. Press SPACE to begin." valType="str" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -524,24 +477,484 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="fix2">
+      <RoutineSettingsComponent name="fix2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="fix2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <PolygonComponent name="polygon_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="trial2">
+      <RoutineSettingsComponent name="trial2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="trial2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="Target_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Target_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$targetChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="Flank1L_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Flank1L_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="$(flank1LX, 0)" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$flank1LChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="flank2L_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="flank2L_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="$(flank2LX, 0)" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$flank2LChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="flank3L_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="flank3L_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="$(flank3LX, 0)" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$flank3LChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="flank1R_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="flank1R_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="$(flank1RX, 0)" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$flank1RChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="flank2R_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="flank2R_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="$(flank2RX, 0)" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$flank2RChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="flank3R_2" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="flank3R_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="$(flank3RX, 0)" valType="list" updates="set every repeat" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$flank3RChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_4" plugin="None">
+        <Param val="'a','l'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correctAns" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_4" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="end">
+      <RoutineSettingsComponent name="end" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="end" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="ending" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.40" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="ending" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="thank you for participanting" valType="str" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Fixation3">
+      <RoutineSettingsComponent name="Fixation3" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="Fixation3" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <PolygonComponent name="polygon" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.2, 0.2)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="baseline_trial">
+      <RoutineSettingsComponent name="baseline_trial" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="baseline_trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="Target_3" plugin="None">
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.45" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Target_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$targetChar" valType="str" updates="set every repeat" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5" plugin="None">
+        <Param val="'a','l'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correctAns" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_5" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.2" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="Intstructions"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 0.889}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 0.837}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 0.98}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 0.911}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 0.839}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 1.014}, {'compatibility': 'baseline', 'spacing': None, 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': -1.0, 'flank2LX': -2.0, 'flank3LX': -3.0, 'flank1RX': 0.15, 'flank2RX': 2.0, 'flank3RX': 3.0, 'itiDur': 1.132}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 1.065}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 0.952}, {'compatibility': 'baseline', 'spacing': None, 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': -1.0, 'flank2LX': -2.0, 'flank3LX': -3.0, 'flank1RX': 0.15, 'flank2RX': 2.0, 'flank3RX': 3.0, 'itiDur': 0.948}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 1.014}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 1.196}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 1.122}, {'compatibility': 'baseline', 'spacing': None, 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': -1.0, 'flank2LX': -2.0, 'flank3LX': -3.0, 'flank1RX': 0.15, 'flank2RX': 2.0, 'flank3RX': 3.0, 'itiDur': 0.884}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 1.154}, {'compatibility': 'baseline', 'spacing': None, 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': -1.0, 'flank2LX': -2.0, 'flank3LX': -3.0, 'flank1RX': 0.15, 'flank2RX': 2.0, 'flank3RX': 3.0, 'itiDur': 0.856}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 0.888}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 1.144}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.0, 'flank2LX': -0.3, 'flank3LX': -4.35, 'flank1RX': 0.15, 'flank2RX': 0.3, 'flank3RX': 4.35, 'itiDur': 0.953}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.08, 'flank2LX': -0.16, 'flank3LX': -0.24, 'flank1RX': 0.08, 'flank2RX': 0.16, 'flank3RX': 0.24, 'itiDur': 1.107}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="Untitled spreadsheet.xlsx" valType="file"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.056}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.81}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 1.071}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 1.06}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 0.88}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.002}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.969}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.812}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.91}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 1.018}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 1.095}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 0.835}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.887}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 0.811}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.889}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.65, 'flank2LX': -1.3, 'flank3LX': -1.95, 'flank1RX': 0.65, 'flank2RX': 1.3, 'flank3RX': 1.95, 'itiDur': 1.157}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="practice_conditions_4types_tighter.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0,1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="5" valType="num"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="Fixation"/>
+    <Routine name="Fixation3"/>
     <Routine name="Trial"/>
     <LoopTerminator name="trials"/>
     <Routine name="iti"/>
     <Routine name="practice_end"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.148}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.936}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.913}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.977}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.826}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.919}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.968}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.123}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.048}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.079}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.037}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.956}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.961}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.986}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.811}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.102}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.966}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.83}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.083}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.889}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.986}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.019}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.888}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.884}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.866}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.146}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.873}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.108}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.111}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.873}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.186}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.021}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.828}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.066}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.909}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.91}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.007}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.177}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.002}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.072}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.064}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.141}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.162}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.198}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.168}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.802}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.064}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.112}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.162}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.897}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.127}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.094}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.182}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.152}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.136}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.184}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.95}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.118}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.101}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.123}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.057}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.068}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.171}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.153}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.141}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.96}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.132}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.926}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.994}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.117}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.89}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.064}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.935}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.917}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.902}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.931}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.911}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.021}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.177}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.975}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.079}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.022}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.995}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.071}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.037}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.817}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.097}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.815}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.86}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.901}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.186}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.162}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.101}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.173}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.884}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.09}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.146}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.808}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.151}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.1}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.82}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.872}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.064}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.058}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.958}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.013}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.907}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.045}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.946}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.973}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.075}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.887}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.896}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.94}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.188}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.093}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.975}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.853}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.867}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.848}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.877}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.028}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.199}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.995}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.022}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.134}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '◆', 'flank2LChar': '◆', 'flank3LChar': '◆', 'flank1RChar': '◆', 'flank2RChar': '◆', 'flank3RChar': '◆', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.898}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.14}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.038}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.172}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.977}, {'compatibility': 'incongruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.966}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.846}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.089}, {'compatibility': 'congruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.987}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.172}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.067}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '●', 'flank2LChar': '●', 'flank3LChar': '●', 'flank1RChar': '●', 'flank2RChar': '●', 'flank3RChar': '●', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.002}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.143}, {'compatibility': 'neutral', 'spacing': 'far', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 1.081}, {'compatibility': 'congruent', 'spacing': 'far', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -1.45, 'flank2LX': -2.9, 'flank3LX': -4.35, 'flank1RX': 1.45, 'flank2RX': 2.9, 'flank3RX': 4.35, 'itiDur': 0.823}, {'compatibility': 'neutral', 'spacing': 'close', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': '✕', 'flank2LChar': '✕', 'flank3LChar': '✕', 'flank1RChar': '✕', 'flank2RChar': '✕', 'flank3RChar': '✕', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 0.85}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': '■', 'flank2LChar': '■', 'flank3LChar': '■', 'flank1RChar': '■', 'flank2RChar': '■', 'flank3RChar': '■', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.033}, {'compatibility': 'incongruent', 'spacing': 'close', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': '▲', 'flank2LChar': '▲', 'flank3LChar': '▲', 'flank1RChar': '▲', 'flank2RChar': '▲', 'flank3RChar': '▲', 'flank1LX': -0.51, 'flank2LX': -1.02, 'flank3LX': -1.53, 'flank1RX': 0.51, 'flank2RX': 1.02, 'flank3RX': 1.53, 'itiDur': 1.065}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="experimental_conditions_144_trials.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Fixation3"/>
+    <Routine name="trial2"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="iti"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'compatibility': 'baseline', 'spacing': 'baseline', 'targetChar': '◆', 'correctAns': 'l', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': 0, 'flank2LX': 0, 'flank3LX': 0, 'flank1RX': 0, 'flank2RX': 0, 'flank3RX': 0, 'itiDur': 0.888}, {'compatibility': 'baseline', 'spacing': 'baseline', 'targetChar': '●', 'correctAns': 'a', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': 0, 'flank2LX': 0, 'flank3LX': 0, 'flank1RX': 0, 'flank2RX': 0, 'flank3RX': 0, 'itiDur': 0.991}, {'compatibility': 'baseline', 'spacing': 'baseline', 'targetChar': '▲', 'correctAns': 'a', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': 0, 'flank2LX': 0, 'flank3LX': 0, 'flank1RX': 0, 'flank2RX': 0, 'flank3RX': 0, 'itiDur': 0.877}, {'compatibility': 'baseline', 'spacing': 'baseline', 'targetChar': '■', 'correctAns': 'l', 'flank1LChar': None, 'flank2LChar': None, 'flank3LChar': None, 'flank1RChar': None, 'flank2RChar': None, 'flank3RChar': None, 'flank1LX': 0, 'flank2LX': 0, 'flank3LX': 0, 'flank1RX': 0, 'flank2RX': 0, 'flank3RX': 0, 'itiDur': 0.916}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="baseline_conditions_4_trials.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Fixation3"/>
+    <Routine name="baseline_trial"/>
+    <LoopTerminator name="trials_3"/>
+    <Routine name="iti"/>
+    <Routine name="end"/>
   </Flow>
 </PsychoPy2experiment>
